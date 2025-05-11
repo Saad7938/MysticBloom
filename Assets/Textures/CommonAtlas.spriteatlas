@@ -41,6 +41,9 @@ SpriteAtlas:
     - e13bb0b47ba624d2ab9cf91e9a088a76: 21300000
     - 92a5a9f4fa7ac4c0180b22c1fedb1a81: 21300000
     - e20d47050d0ee4e4bad2a804dbc56c80: 21300000
+    - ce39f597f9b510e49bb5e7ea9ac9e41e: -1828720224
+    - 9e8f58e968bb5d74e84129dd94161fb5: 21300000
+    - facc0a7a6585be94085c4eef1403092a: -31472445
     - 9b8def7c3ba474d5583690f856eb116a: 21300000
     - 42c811acc2d824c5ba81fcc2c573d49e: 21300000
     - 24674a0d6b94e4835b18c0ac4cab1553: -2413806693520163455
@@ -49,6 +52,9 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e13bb0b47ba624d2ab9cf91e9a088a76, type: 3}
   - {fileID: 21300000, guid: 92a5a9f4fa7ac4c0180b22c1fedb1a81, type: 3}
   - {fileID: 21300000, guid: e20d47050d0ee4e4bad2a804dbc56c80, type: 3}
+  - {fileID: -1828720224, guid: ce39f597f9b510e49bb5e7ea9ac9e41e, type: 3}
+  - {fileID: 21300000, guid: 9e8f58e968bb5d74e84129dd94161fb5, type: 3}
+  - {fileID: -31472445, guid: facc0a7a6585be94085c4eef1403092a, type: 3}
   - {fileID: 21300000, guid: 9b8def7c3ba474d5583690f856eb116a, type: 3}
   - {fileID: 21300000, guid: 42c811acc2d824c5ba81fcc2c573d49e, type: 3}
   - {fileID: -2413806693520163455, guid: 24674a0d6b94e4835b18c0ac4cab1553, type: 3}
@@ -56,6 +62,9 @@ SpriteAtlas:
   - Tree
   - Carrot
   - Grass
+  - cabbage-removebg-preview_0
+  - tangerines
+  - tomato-removebg-preview_0
   - grey_box
   - blue_panel
   - Circle

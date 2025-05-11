@@ -2,6 +2,7 @@ using Farm.FSM;
 using Farm.FSM.States.CellStates;
 using Food;
 using UnityEngine;
+using GameData;
 
 namespace Farm.Grid
 {
@@ -57,6 +58,7 @@ namespace Farm.Grid
             }
 
             CurrentFood = Instantiate(foodBase, transform.position, Quaternion.identity, transform);
+            GameDataManager.ReduceWater(3);
             ChangeState(_plantedState);
         }
 

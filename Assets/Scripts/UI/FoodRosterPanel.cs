@@ -7,6 +7,7 @@ using Farm.Commands;
 using Farm.Food;
 using Farm.Grid;
 using Food;
+using GameData;
 using UnityEngine;
 
 namespace Farm.UI
@@ -76,6 +77,11 @@ namespace Farm.UI
 
             SelectedCell = cell;
             Hide();
+
+            if(GameDataManager.IsStorageFull())
+            {
+                return;
+            }
 
             if (cell.CurrentFood.IsRipe)
             {

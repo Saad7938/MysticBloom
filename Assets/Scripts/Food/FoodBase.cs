@@ -3,6 +3,7 @@ using Farm.FSM;
 using Farm.FSM.States.FoodStates;
 using Farm.UI;
 using UnityEngine;
+using GameData;
 
 namespace Food
 {
@@ -30,6 +31,7 @@ namespace Food
         public FoodKind FoodKind { get; protected set; }
 
         public abstract bool Interact();
+
 
         private void Awake()
         {

@@ -1,4 +1,5 @@
 using Food;
+using GameData;
 
 public class Grass : FoodBase
 {
@@ -13,7 +14,7 @@ public class Grass : FoodBase
         {
             return false;
         }
-
+        GameDataManager.AddGrass();
         Destroy(gameObject);
         return true;
     }
