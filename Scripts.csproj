@@ -50,15 +50,19 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\UI\SellUi\SellButtons.cs" />
     <Compile Include="Assets\Scripts\FSM\States\FoodStates\RipeState.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseUi\PauseButtons.cs" />
     <Compile Include="Assets\Scripts\UI\Billboard.cs" />
     <Compile Include="Assets\Scripts\Commands\PickupCommand.cs" />
     <Compile Include="Assets\Scripts\FSM\States\CellStates\FreeState.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimator.cs" />
     <Compile Include="Assets\Scripts\Commands\DoNothingCommand.cs" />
+    <Compile Include="Assets\Scripts\Menu\mainMenu.cs" />
     <Compile Include="Assets\Scripts\UI\GameStatView.cs" />
     <Compile Include="Assets\Scripts\FSM\States\Player\WalkState.cs" />
     <Compile Include="Assets\Scripts\Grid\GridSpawner.cs" />
     <Compile Include="Assets\Scripts\Commands\CutDownCommand.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu\MainMenuController.cs" />
+    <Compile Include="Assets\Scripts\AudioScript\AudioManager.cs" />
     <Compile Include="Assets\Scripts\FSM\States\Player\PlantState.cs" />
     <Compile Include="Assets\Scripts\UI\GrowTimerUI.cs" />
     <Compile Include="Assets\Scripts\Helpers\AnimatorHash.cs" />
@@ -79,16 +83,20 @@
     <Compile Include="Assets\Scripts\UI\SellUi\TrigerSellPanel.cs" />
     <Compile Include="Assets\Scripts\Water\TrigerWaterPanel.cs" />
     <Compile Include="Assets\Scripts\UI\SellUi\itemSlot.cs" />
+    <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\Water\WaterWindow.cs" />
     <Compile Include="Assets\Scripts\UI\SellUi\refundSlot.cs" />
+    <Compile Include="Assets\Scripts\UI\HomePanel\Scroller.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Utils\Timer.cs" />
     <Compile Include="Assets\Scripts\GameData\GameDataManager.cs" />
+    <Compile Include="Assets\Scripts\UI\PauseUi\PauseButtonsController.cs" />
     <Compile Include="Assets\Scripts\FSM\States\Player\IdleState.cs" />
     <Compile Include="Assets\Scripts\UI\SellUi\dragDrop.cs" />
     <Compile Include="Assets\Scripts\UI\FoodRosterPanel.cs" />
     <Compile Include="Assets\Scripts\Grid\CellSelector.cs" />
     <Compile Include="Assets\Scripts\FSM\IState.cs" />
+    <Compile Include="Assets\Scripts\UI\MainMenu\MainMenuButtons.cs" />
     <Compile Include="Assets\Scripts\Commands\ICommand.cs" />
     <Compile Include="Assets\Scripts\App.cs" />
   </ItemGroup>

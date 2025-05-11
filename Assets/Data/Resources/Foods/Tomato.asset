@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2687896ff17c495e825a9e83fa5d8d08, type: 3}
-  m_Name: Tree
+  m_Name: Tomato
   m_EditorClassIdentifier: 
-  Name: Tree
+  Name: Tomato
   Icon: {fileID: -31472445, guid: facc0a7a6585be94085c4eef1403092a, type: 3}
   GrowTime: 25
   FoodPrefab: {fileID: 378441272465202293, guid: ade15db20b77e4a7385e502628f14f3d, type: 3}

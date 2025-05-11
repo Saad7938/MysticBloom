@@ -1,5 +1,5 @@
 using Food;
-
+using GameData;
 public class Tree : FoodBase
 {
     private void Start()
@@ -14,7 +14,8 @@ public class Tree : FoodBase
             return false;
         }
 
-        // Do nothing
+        GameDataManager.AddTree();
+        Destroy(gameObject);
 
         return true;
     }

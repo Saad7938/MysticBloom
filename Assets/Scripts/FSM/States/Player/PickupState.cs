@@ -1,5 +1,8 @@
 using Farm.Helpers;
 using Farm.Player;
+using Farm.Audio;
+using UnityEngine;
+
 
 namespace Farm.FSM.States.Player
 {
@@ -9,6 +12,8 @@ namespace Farm.FSM.States.Player
         private readonly PlayerAnimator _playerAnimator;
         private int _actionAnimationHash;
 
+        private AudioManager _audioManager;
+
         public PickupState(PlayerController playerController, PlayerAnimator playerAnimator)
         {
             _playerController = playerController;
@@ -17,6 +22,8 @@ namespace Farm.FSM.States.Player
 
         public void Enter()
         {
+            _audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+            _audioManager.playSFX(_audioManager.Harvesting);
             _actionAnimationHash = _playerController.Task.AnimationHash;
             _playerAnimator.TriggerAnimation(_actionAnimationHash);
         }

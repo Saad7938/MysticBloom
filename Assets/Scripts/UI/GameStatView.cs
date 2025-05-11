@@ -9,9 +9,12 @@ namespace Farm.UI
     public class GameStatView : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI _carrotLabel;
+        [SerializeField] private TextMeshProUGUI _carrotLabelSell;
         [SerializeField] private TextMeshProUGUI _expLabel;
         [SerializeField] private TextMeshProUGUI _treeLabel;
+        [SerializeField] private TextMeshProUGUI _treeLabelSell;
         [SerializeField] private TextMeshProUGUI _grassLabel;
+        [SerializeField] private TextMeshProUGUI _grassLabelSell;
         [SerializeField] private TextMeshProUGUI _coinLabel;
         [SerializeField] private TextMeshProUGUI _waterLabel;
         [SerializeField] private TextMeshProUGUI _storage;
@@ -50,6 +53,7 @@ namespace Farm.UI
         private void UpdateCarrotLabel(float value)
         {
             _carrotLabel.SetText($"Carrot: {value:0}");
+            _carrotLabelSell.SetText($"Carrot: {value:0}");
         }
 
         private void OnTreeChange(int prevValue, int newValue)
@@ -60,6 +64,7 @@ namespace Farm.UI
         private void UpdateTreeLabel(float value)
         {
             _treeLabel.SetText($"Tree: {value:0}");
+            _treeLabelSell.SetText($"Tree: {value:0}");
         }
 
         private void OnGrassChange(int prevValue, int newValue)
@@ -70,6 +75,7 @@ namespace Farm.UI
         private void UpdateGrassLabel(float value)
         {
             _grassLabel.SetText($"Grass: {value:0}");
+            _grassLabelSell.SetText($"Grass: {value:0}");
         }
 
         private void OnExperienceChange(int prevValue, int newValue)

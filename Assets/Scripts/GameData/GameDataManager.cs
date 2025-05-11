@@ -88,7 +88,7 @@ namespace GameData
             if (value == 999)
             {
                 var currWater = _gameData.Water;
-                var reqWater = 12 - currWater; 
+                var reqWater = 12 - currWater;
                 var reducingCost = reqWater * 2;
                 value = reducingCost;
             }
@@ -124,6 +124,10 @@ namespace GameData
                 _gameData.Water -= value;
             OnWaterChange?.Invoke(prevValue, _gameData.Water);
         }
+        public static int getWaterCount()
+        {
+            return _gameData.Water;
+        }
 
         public static void AddCarrot()
         {
@@ -131,6 +135,17 @@ namespace GameData
             _gameData.Carrot++;
             SetStorage();
             OnCarrotChange?.Invoke(prevValue, _gameData.Carrot);
+        }
+        public static void ReduceCarrot()
+        {
+            var prevValue = _gameData.Carrot;
+            if (_gameData.Carrot > 0)
+                _gameData.Carrot--;
+            OnCarrotChange?.Invoke(prevValue, _gameData.Carrot);
+        }
+        public static int getCarrotCount()
+        {
+            return _gameData.Carrot;
         }
 
         public static void AddExperience(int value)
@@ -147,6 +162,17 @@ namespace GameData
             SetStorage();
             OnTreeChange?.Invoke(prevValue, _gameData.Tree);
         }
+        public static void ReduceTree()
+        {
+            var prevValue = _gameData.Tree;
+            if (_gameData.Tree > 0)
+                _gameData.Tree--;
+            OnTreeChange?.Invoke(prevValue, _gameData.Tree);
+        }
+        public static int getTreeCount()
+        {
+            return _gameData.Tree;
+        }
 
         public static void AddGrass()
         {
@@ -154,6 +180,17 @@ namespace GameData
             _gameData.Grass++;
             SetStorage();
             OnGrassChange?.Invoke(prevValue, _gameData.Grass);
+        }
+        public static void ReduceGrass()
+        {
+            var prevValue = _gameData.Grass;
+            if (_gameData.Grass > 0)
+                _gameData.Grass--;
+            OnGrassChange?.Invoke(prevValue, _gameData.Grass);
+        }
+        public static int getGrassCount()
+        {
+            return _gameData.Grass;
         }
 
         private static void Save<T>(GameData<T> gameData, string dataPath)
@@ -174,8 +211,9 @@ namespace GameData
             return gameData;
         }
 
-        public static bool IsStorageFull(){
-            if(_gameData.Storage < 12)
+        public static bool IsStorageFull()
+        {
+            if (_gameData.Storage < 12)
                 return false;
             else
                 return true;

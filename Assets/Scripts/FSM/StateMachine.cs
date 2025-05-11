@@ -16,6 +16,7 @@ namespace Farm.FSM
             {
                 return;
             }
+            
 
             CurrentState.Exit();
             CurrentState = newState;

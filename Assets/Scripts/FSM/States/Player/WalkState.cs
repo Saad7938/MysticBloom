@@ -19,11 +19,13 @@ namespace Farm.FSM.States.Player
 
         public void Enter()
         {
+  
             MoveTo();
         }
 
         public void Update()
         {
+            
             UpdateAnimator();
             MoveTo();
 

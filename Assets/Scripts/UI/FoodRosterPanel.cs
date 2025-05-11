@@ -89,7 +89,7 @@ namespace Farm.UI
                 {
                     FoodKind.Carrot => new PickupCommand(cell),
                     FoodKind.Grass => new CutDownCommand(cell),
-                    FoodKind.Tree => new DoNothingCommand(),
+                    FoodKind.Tree => new CutDownCommand(cell),
                     _ => throw new ArgumentOutOfRangeException(),
                 };
                 command.Execute();

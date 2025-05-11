@@ -6,6 +6,9 @@ TagManager:
   tags:
   - carrot
   - Carrot
+  - Cabbage
+  - Tomato
+  - Audio
   layers:
   - Default
   - TransparentFX
