@@ -20,7 +20,9 @@ namespace Food
         [SerializeField] private GameObject _foodRender;
         [SerializeField] private GrowTimerUI _growTimerUI;
         [SerializeField] private ParticleSystem _particleSystem;
-
+        [SerializeField] private GameObject _insectObject;
+        
+        private bool _hasInsect = true;
         private IState _ripeState;
         private IState _growState;
         private StateMachine _stateMachine;
@@ -29,6 +31,8 @@ namespace Food
 
         public IState RipeState => _ripeState;
         public FoodKind FoodKind { get; protected set; }
+        public float Health { get; private set; } = 100f;
+
 
         public abstract bool Interact();
 
@@ -48,6 +52,28 @@ namespace Food
         public void ChangeState(IState state)
         {
             _stateMachine.ChangeState(state);
+        }
+
+        public void TakeDamage(float amount)
+        {
+            Health -= amount;
+            if(Health<=0f)
+            {
+                Destroy(gameObject);
+            }
+        }
+
+        public void KillInsect()
+        {
+            if(_hasInsect)
+            {
+                _hasInsect = false;
+                if(_insectObject!=null)
+                {
+                    Destroy(_insectObject);
+                }
+                Debug.Log("Insect Killed!");
+            }
         }
     }
 }

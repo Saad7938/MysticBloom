@@ -95,6 +95,7 @@ namespace Farm.Grid
 
             // Trigger click event
             OnCellClicked?.Invoke(cell);
+            //cell?.TryKillInsect();
         }
 
         private CellLogic GetCellAtPointer(Vector2 pointerPosition)

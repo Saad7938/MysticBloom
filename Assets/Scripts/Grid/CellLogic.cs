@@ -84,5 +84,13 @@ namespace Farm.Grid
         {
             _meshRenderer.material.color = Color.white;
         }
+
+        /*public void TryKillInsect()
+        {
+            if(!IsFree && CurrentFood !=null)
+            {
+                CurrentFood.KillInsect();
+            }
+        }*/
     }
 }

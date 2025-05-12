@@ -1,29 +1,29 @@
 Using pre-set license
-Built from '6000.0/release' branch; Version is '6000.0.35f1 (9a3bc604008a) revision 10107846'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 7853 MB
+Built from '6000.0/staging' branch; Version is '6000.0.40f1 (157d81624ddf) revision 1408385'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 7591 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\6000.0.35f1\Editor\Unity.exe
+E:\Setups\Unity Editor\6000.0.40f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/Tom/OneDrive - FAST National University/Desktop/game
+E:/BSE/Sem6/GDD/Project/MysticBloom
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-57469
+51415
 -job-worker-count
 1
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: C:/Users/Tom/OneDrive - FAST National University/Desktop/game
-C:/Users/Tom/OneDrive - FAST National University/Desktop/game
+Successfully changed project path to: E:/BSE/Sem6/GDD/Project/MysticBloom
+E:/BSE/Sem6/GDD/Project/MysticBloom
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,12 +59,12 @@ C:/Users/Tom/OneDrive - FAST National University/Desktop/game
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [30692]  Target information:
+Player connection [23664]  Target information:
 
-Player connection [30692]  * "[IP] 192.168.1.30 [Port] 0 [Flags] 2 [Guid] 4162791247 [EditorId] 4162791247 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-P8DQ1B8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [23664]  * "[IP] 192.168.100.15 [Port] 0 [Flags] 2 [Guid] 578048517 [EditorId] 578048517 [Version] 1048832 [Id] WindowsEditor(7,Mema) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [30692] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [30692] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23664] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23664] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 1
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -76,62 +76,64 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 254.14 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 6000.0.35f1 (9a3bc604008a)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Tom/OneDrive - FAST National University/Desktop/game/Assets
+Initialize engine version: 6000.0.40f1 (157d81624ddf)
+[Subsystems] Discovering subsystems at path E:/Setups/Unity Editor/6000.0.40f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/BSE/Sem6/GDD/Project/MysticBloom/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: Intel(R) HD Graphics 520 (ID=0x1916)
     Vendor:   Intel
-    VRAM:     3926 MB
-    Driver:   30.0.101.1338
+    VRAM:     3795 MB
+    Driver:   23.20.16.4973
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Mono path[0] = 'E:/Setups/Unity Editor/6000.0.40f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Setups/Unity Editor/6000.0.40f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Setups/Unity Editor/6000.0.40f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.35f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.011312 seconds.
-- Loaded All Assemblies, in  1.584 seconds
+Register platform support module: E:/Setups/Unity Editor/6000.0.40f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: E:/Setups/Unity Editor/6000.0.40f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: E:/Setups/Unity Editor/6000.0.40f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.254374 seconds.
+- Loaded All Assemblies, in 31.827 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1008 ms
+Android Extension - Scanning For ADB Devices 1856 ms
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.847 seconds
-Domain Reload Profiling: 4432ms
-	BeginReloadAssembly (494ms)
+- Finished resetting the current domain, in  4.048 seconds
+Domain Reload Profiling: 35875ms
+	BeginReloadAssembly (16324ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (177ms)
-	RebuildNativeTypeToScriptingClass (50ms)
-	initialDomainReloadingComplete (375ms)
-	LoadAllAssembliesAndSetupDomain (484ms)
-		LoadAssemblies (490ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (2360ms)
+	RebuildNativeTypeToScriptingClass (446ms)
+	initialDomainReloadingComplete (1154ms)
+	LoadAllAssembliesAndSetupDomain (11541ms)
+		LoadAssemblies (16281ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (475ms)
-			TypeCache.Refresh (472ms)
-				TypeCache.ScanAssembly (444ms)
-			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (2852ms)
+		AnalyzeDomain (11511ms)
+			TypeCache.Refresh (11504ms)
+				TypeCache.ScanAssembly (9827ms)
+			BuildScriptInfoCaches (2ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (4050ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2682ms)
+		SetupLoadedEditorAssemblies (3817ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1232ms)
-			SetLoadedEditorAssemblies (40ms)
-			BeforeProcessingInitializeOnLoad (482ms)
-			ProcessInitializeOnLoadAttributes (399ms)
-			ProcessInitializeOnLoadMethodAttributes (529ms)
+			InitializePlatformSupportModulesInManaged (2500ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (373ms)
+			ProcessInitializeOnLoadAttributes (619ms)
+			ProcessInitializeOnLoadMethodAttributes (315ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -140,534 +142,712 @@ Domain Reload Profiling: 4432ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.831 seconds
+- Loaded All Assemblies, in 19.003 seconds
 Script 'Tree' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 1.31 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.30 ms, found 0 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.124 seconds
-Domain Reload Profiling: 4950ms
-	BeginReloadAssembly (669ms)
+- Finished resetting the current domain, in  3.086 seconds
+Domain Reload Profiling: 22086ms
+	BeginReloadAssembly (1979ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (37ms)
+		DisableScriptedObjects (81ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (108ms)
-	RebuildCommonClasses (115ms)
-	RebuildNativeTypeToScriptingClass (37ms)
-	initialDomainReloadingComplete (159ms)
-	LoadAllAssembliesAndSetupDomain (844ms)
-		LoadAssemblies (966ms)
+		CreateAndSetChildDomain (100ms)
+	RebuildCommonClasses (418ms)
+	RebuildNativeTypeToScriptingClass (374ms)
+	initialDomainReloadingComplete (518ms)
+	LoadAllAssembliesAndSetupDomain (15710ms)
+		LoadAssemblies (15688ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (260ms)
-			TypeCache.Refresh (214ms)
-				TypeCache.ScanAssembly (165ms)
-			BuildScriptInfoCaches (30ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (3126ms)
+		AnalyzeDomain (1606ms)
+			TypeCache.Refresh (1537ms)
+				TypeCache.ScanAssembly (1368ms)
+			BuildScriptInfoCaches (47ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (3087ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2304ms)
+		SetupLoadedEditorAssemblies (2032ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (222ms)
-			ProcessInitializeOnLoadAttributes (1804ms)
-			ProcessInitializeOnLoadMethodAttributes (203ms)
-			AfterProcessingInitializeOnLoad (39ms)
-			EditorAssembliesLoaded (2ms)
+			InitializePlatformSupportModulesInManaged (142ms)
+			SetLoadedEditorAssemblies (27ms)
+			BeforeProcessingInitializeOnLoad (671ms)
+			ProcessInitializeOnLoadAttributes (1056ms)
+			ProcessInitializeOnLoadMethodAttributes (128ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (102ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.19 seconds
-Refreshing native plugins compatible for Editor in 3.06 ms, found 0 plugins.
+		AwakeInstancesAfterBackupRestoration (18ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1338 unused Assets / (472.3 KB). Loaded Objects now: 1866.
-Memory consumption went from 67.4 MB to 66.9 MB.
-Total: 27.809000 ms (FindLiveObjects: 0.704700 ms CreateObjectMapping: 0.284900 ms MarkObjects: 23.333600 ms  DeleteObjects: 3.479700 ms)
+Unloading 26 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1340 unused Assets / (149.1 KB). Loaded Objects now: 1871.
+Memory consumption went from 69.9 MB to 69.8 MB.
+Total: 180.686700 ms (FindLiveObjects: 4.339100 ms CreateObjectMapping: 0.592500 ms MarkObjects: 174.375900 ms  DeleteObjects: 1.371600 ms)
 
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  5.562 seconds
+- Loaded All Assemblies, in  7.162 seconds
 Script 'Tree' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.46 ms, found 0 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.400 seconds
-Domain Reload Profiling: 9944ms
-	BeginReloadAssembly (2110ms)
+- Finished resetting the current domain, in  2.655 seconds
+Domain Reload Profiling: 9808ms
+	BeginReloadAssembly (2912ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (83ms)
+		DisableScriptedObjects (35ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (376ms)
-	RebuildCommonClasses (580ms)
-	RebuildNativeTypeToScriptingClass (200ms)
-	initialDomainReloadingComplete (526ms)
-	LoadAllAssembliesAndSetupDomain (2125ms)
-		LoadAssemblies (2720ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (434ms)
+	RebuildCommonClasses (499ms)
+	RebuildNativeTypeToScriptingClass (95ms)
+	initialDomainReloadingComplete (1394ms)
+	LoadAllAssembliesAndSetupDomain (2251ms)
+		LoadAssemblies (4147ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (593ms)
-			TypeCache.Refresh (49ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (514ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (4402ms)
+		AnalyzeDomain (215ms)
+			TypeCache.Refresh (24ms)
+				TypeCache.ScanAssembly (5ms)
+			BuildScriptInfoCaches (164ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (2658ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3472ms)
+		SetupLoadedEditorAssemblies (1969ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (143ms)
-			SetLoadedEditorAssemblies (44ms)
-			BeforeProcessingInitializeOnLoad (1006ms)
-			ProcessInitializeOnLoadAttributes (1896ms)
-			ProcessInitializeOnLoadMethodAttributes (368ms)
+			InitializePlatformSupportModulesInManaged (57ms)
+			SetLoadedEditorAssemblies (41ms)
+			BeforeProcessingInitializeOnLoad (488ms)
+			ProcessInitializeOnLoadAttributes (1324ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1338 unused Assets / (287.6 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.4 MB to 64.1 MB.
+Total: 23.496000 ms (FindLiveObjects: 0.291900 ms CreateObjectMapping: 0.250800 ms MarkObjects: 21.756100 ms  DeleteObjects: 1.195400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  9.263 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 2.95 ms, found 0 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 23.595 seconds
+Domain Reload Profiling: 32887ms
+	BeginReloadAssembly (1866ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (47ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (148ms)
+	RebuildCommonClasses (860ms)
+	RebuildNativeTypeToScriptingClass (67ms)
+	initialDomainReloadingComplete (413ms)
+	LoadAllAssembliesAndSetupDomain (6077ms)
+		LoadAssemblies (6323ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1269ms)
+			TypeCache.Refresh (27ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (874ms)
+			ResolveRequiredComponents (314ms)
+	FinalizeReload (23604ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (16342ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (739ms)
+			SetLoadedEditorAssemblies (217ms)
+			BeforeProcessingInitializeOnLoad (6297ms)
+			ProcessInitializeOnLoadAttributes (8034ms)
+			ProcessInitializeOnLoadMethodAttributes (1041ms)
 			AfterProcessingInitializeOnLoad (15ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
-Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+		AwakeInstancesAfterBackupRestoration (68ms)
+Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1336 unused Assets / (34.1 KB). Loaded Objects now: 1867.
-Memory consumption went from 62.3 MB to 62.3 MB.
-Total: 12.284700 ms (FindLiveObjects: 0.280100 ms CreateObjectMapping: 0.355200 ms MarkObjects: 10.895400 ms  DeleteObjects: 0.751600 ms)
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1338 unused Assets / (383.3 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.3 MB to 64.0 MB.
+Total: 16.249600 ms (FindLiveObjects: 0.435000 ms CreateObjectMapping: 0.525500 ms MarkObjects: 14.188300 ms  DeleteObjects: 1.098500 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.627 seconds
+- Loaded All Assemblies, in 66.939 seconds
 Script 'Tree' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 5.73 ms, found 0 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.579 seconds
-Domain Reload Profiling: 5211ms
-	BeginReloadAssembly (628ms)
+- Finished resetting the current domain, in 41.562 seconds
+Domain Reload Profiling: 108530ms
+	BeginReloadAssembly (33717ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
+		DisableScriptedObjects (725ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (72ms)
-	RebuildCommonClasses (205ms)
-	RebuildNativeTypeToScriptingClass (94ms)
-	initialDomainReloadingComplete (89ms)
-	LoadAllAssembliesAndSetupDomain (600ms)
-		LoadAssemblies (910ms)
+		ReleaseScriptingObjects (11ms)
+		CreateAndSetChildDomain (21974ms)
+	RebuildCommonClasses (2577ms)
+	RebuildNativeTypeToScriptingClass (593ms)
+	initialDomainReloadingComplete (1653ms)
+	LoadAllAssembliesAndSetupDomain (28396ms)
+		LoadAssemblies (30546ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (153ms)
-			TypeCache.Refresh (10ms)
+		AnalyzeDomain (7024ms)
+			TypeCache.Refresh (491ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (119ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (3594ms)
+			BuildScriptInfoCaches (6307ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (41594ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2911ms)
+		SetupLoadedEditorAssemblies (25851ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (283ms)
-			ProcessInitializeOnLoadAttributes (1580ms)
-			ProcessInitializeOnLoadMethodAttributes (936ms)
-			AfterProcessingInitializeOnLoad (75ms)
-			EditorAssembliesLoaded (2ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (107ms)
-Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1336 unused Assets / (93.8 KB). Loaded Objects now: 1867.
-Memory consumption went from 62.3 MB to 62.2 MB.
-Total: 34.607400 ms (FindLiveObjects: 1.578200 ms CreateObjectMapping: 1.704700 ms MarkObjects: 25.712500 ms  DeleteObjects: 4.815400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Script 'Tree' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 1.01 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1334 unused Assets / (31.9 KB). Loaded Objects now: 1867.
-Memory consumption went from 62.5 MB to 62.4 MB.
-Total: 18.110800 ms (FindLiveObjects: 0.356300 ms CreateObjectMapping: 0.348200 ms MarkObjects: 15.987900 ms  DeleteObjects: 1.416000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Script 'Tree' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 1.68 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1334 unused Assets / (81.3 KB). Loaded Objects now: 1867.
-Memory consumption went from 62.5 MB to 62.4 MB.
-Total: 27.001900 ms (FindLiveObjects: 0.360600 ms CreateObjectMapping: 0.468700 ms MarkObjects: 24.999500 ms  DeleteObjects: 1.170300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  4.155 seconds
-Script 'Tree' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.593 seconds
-Domain Reload Profiling: 5734ms
-	BeginReloadAssembly (1738ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (54ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (341ms)
-	RebuildCommonClasses (498ms)
-	RebuildNativeTypeToScriptingClass (50ms)
-	initialDomainReloadingComplete (129ms)
-	LoadAllAssembliesAndSetupDomain (1724ms)
-		LoadAssemblies (2747ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (162ms)
-			TypeCache.Refresh (33ms)
-				TypeCache.ScanAssembly (2ms)
-			BuildScriptInfoCaches (114ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (1595ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1203ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (265ms)
-			ProcessInitializeOnLoadAttributes (813ms)
-			ProcessInitializeOnLoadMethodAttributes (73ms)
+			InitializePlatformSupportModulesInManaged (2577ms)
+			SetLoadedEditorAssemblies (110ms)
+			BeforeProcessingInitializeOnLoad (20486ms)
+			ProcessInitializeOnLoadAttributes (2533ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
 			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
-Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+		AwakeInstancesAfterBackupRestoration (238ms)
+Refreshing native plugins compatible for Editor in 1.33 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1336 unused Assets / (379.6 KB). Loaded Objects now: 1867.
-Memory consumption went from 62.3 MB to 61.9 MB.
-Total: 10.035300 ms (FindLiveObjects: 0.351500 ms CreateObjectMapping: 0.275600 ms MarkObjects: 8.571700 ms  DeleteObjects: 0.834300 ms)
+Unloading 1338 unused Assets / (32.0 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.3 MB to 64.3 MB.
+Total: 43.166300 ms (FindLiveObjects: 0.442000 ms CreateObjectMapping: 0.380400 ms MarkObjects: 40.861800 ms  DeleteObjects: 1.476200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 0.82 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1336 unused Assets / (32.0 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.6 MB to 64.5 MB.
+Total: 1000.957700 ms (FindLiveObjects: 2.217600 ms CreateObjectMapping: 0.358700 ms MarkObjects: 996.962400 ms  DeleteObjects: 1.415800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.690 seconds
+- Loaded All Assemblies, in  8.718 seconds
 Script 'Tree' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.65 ms, found 0 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.439 seconds
-Domain Reload Profiling: 3127ms
-	BeginReloadAssembly (613ms)
+- Finished resetting the current domain, in  4.227 seconds
+Domain Reload Profiling: 12929ms
+	BeginReloadAssembly (3575ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
+		DisableScriptedObjects (262ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (59ms)
-	RebuildCommonClasses (257ms)
-	RebuildNativeTypeToScriptingClass (48ms)
-	initialDomainReloadingComplete (84ms)
-	LoadAllAssembliesAndSetupDomain (685ms)
-		LoadAssemblies (944ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (1338ms)
+	RebuildCommonClasses (290ms)
+	RebuildNativeTypeToScriptingClass (180ms)
+	initialDomainReloadingComplete (105ms)
+	LoadAllAssembliesAndSetupDomain (4550ms)
+		LoadAssemblies (4284ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (183ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (156ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1440ms)
+		AnalyzeDomain (1234ms)
+			TypeCache.Refresh (762ms)
+				TypeCache.ScanAssembly (4ms)
+			BuildScriptInfoCaches (437ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (4228ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1126ms)
+		SetupLoadedEditorAssemblies (3137ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (35ms)
-			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (240ms)
-			ProcessInitializeOnLoadAttributes (732ms)
-			ProcessInitializeOnLoadMethodAttributes (97ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1336 unused Assets / (334.2 KB). Loaded Objects now: 1867.
-Memory consumption went from 62.3 MB to 61.9 MB.
-Total: 9.839800 ms (FindLiveObjects: 0.243600 ms CreateObjectMapping: 0.202600 ms MarkObjects: 8.645500 ms  DeleteObjects: 0.746200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.687 seconds
-Script 'Tree' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.742 seconds
-Domain Reload Profiling: 3429ms
-	BeginReloadAssembly (666ms)
-		ExecutionOrderSort (1ms)
-		DisableScriptedObjects (22ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (168ms)
-	RebuildCommonClasses (130ms)
-	RebuildNativeTypeToScriptingClass (42ms)
-	initialDomainReloadingComplete (77ms)
-	LoadAllAssembliesAndSetupDomain (768ms)
-		LoadAssemblies (998ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (153ms)
-			TypeCache.Refresh (21ms)
-				TypeCache.ScanAssembly (2ms)
-			BuildScriptInfoCaches (119ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1746ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1256ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (39ms)
-			SetLoadedEditorAssemblies (13ms)
-			BeforeProcessingInitializeOnLoad (323ms)
-			ProcessInitializeOnLoadAttributes (780ms)
-			ProcessInitializeOnLoadMethodAttributes (91ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			InitializePlatformSupportModulesInManaged (366ms)
+			SetLoadedEditorAssemblies (17ms)
+			BeforeProcessingInitializeOnLoad (668ms)
+			ProcessInitializeOnLoadAttributes (1934ms)
+			ProcessInitializeOnLoadMethodAttributes (138ms)
+			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (21ms)
-Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.67 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1336 unused Assets / (324.1 KB). Loaded Objects now: 1867.
-Memory consumption went from 62.3 MB to 61.9 MB.
-Total: 7.696400 ms (FindLiveObjects: 0.308600 ms CreateObjectMapping: 0.519800 ms MarkObjects: 6.211200 ms  DeleteObjects: 0.654900 ms)
+Unloading 1338 unused Assets / (32.0 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.3 MB to 64.3 MB.
+Total: 17.620500 ms (FindLiveObjects: 0.557400 ms CreateObjectMapping: 0.503300 ms MarkObjects: 15.356900 ms  DeleteObjects: 1.199300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.529 seconds
+- Loaded All Assemblies, in 34.557 seconds
 Script 'Tree' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 8.57 ms, found 0 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.632 seconds
-Domain Reload Profiling: 6155ms
-	BeginReloadAssembly (547ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (79ms)
-	RebuildCommonClasses (122ms)
-	RebuildNativeTypeToScriptingClass (53ms)
-	initialDomainReloadingComplete (59ms)
-	LoadAllAssembliesAndSetupDomain (741ms)
-		LoadAssemblies (968ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (155ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (131ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (4633ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (4067ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (11ms)
-			BeforeProcessingInitializeOnLoad (262ms)
-			ProcessInitializeOnLoadAttributes (2367ms)
-			ProcessInitializeOnLoadMethodAttributes (832ms)
-			AfterProcessingInitializeOnLoad (560ms)
-			EditorAssembliesLoaded (5ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (153ms)
-Refreshing native plugins compatible for Editor in 4.28 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.01 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1336 unused Assets / (467.0 KB). Loaded Objects now: 1867.
-Memory consumption went from 62.3 MB to 61.8 MB.
-Total: 31.052300 ms (FindLiveObjects: 0.402000 ms CreateObjectMapping: 0.914200 ms MarkObjects: 27.997400 ms  DeleteObjects: 1.736300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.741 seconds
-Script 'Tree' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.684 seconds
-Domain Reload Profiling: 3427ms
-	BeginReloadAssembly (502ms)
+- Finished resetting the current domain, in  2.705 seconds
+Domain Reload Profiling: 37280ms
+	BeginReloadAssembly (4754ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (25ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (82ms)
-	RebuildCommonClasses (118ms)
-	RebuildNativeTypeToScriptingClass (41ms)
-	initialDomainReloadingComplete (62ms)
-	LoadAllAssembliesAndSetupDomain (1014ms)
-		LoadAssemblies (1057ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (129ms)
+	RebuildCommonClasses (4011ms)
+	RebuildNativeTypeToScriptingClass (1391ms)
+	initialDomainReloadingComplete (1433ms)
+	LoadAllAssembliesAndSetupDomain (22985ms)
+		LoadAssemblies (23147ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (265ms)
-			TypeCache.Refresh (60ms)
+		AnalyzeDomain (4244ms)
+			TypeCache.Refresh (49ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (190ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1689ms)
+			BuildScriptInfoCaches (3676ms)
+			ResolveRequiredComponents (482ms)
+	FinalizeReload (2706ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1229ms)
+		SetupLoadedEditorAssemblies (1850ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (46ms)
-			SetLoadedEditorAssemblies (9ms)
-			BeforeProcessingInitializeOnLoad (199ms)
-			ProcessInitializeOnLoadAttributes (884ms)
-			ProcessInitializeOnLoadMethodAttributes (73ms)
-			AfterProcessingInitializeOnLoad (17ms)
+			InitializePlatformSupportModulesInManaged (52ms)
+			SetLoadedEditorAssemblies (23ms)
+			BeforeProcessingInitializeOnLoad (495ms)
+			ProcessInitializeOnLoadAttributes (1040ms)
+			ProcessInitializeOnLoadMethodAttributes (229ms)
+			AfterProcessingInitializeOnLoad (12ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (41ms)
-Refreshing native plugins compatible for Editor in 2.17 ms, found 0 plugins.
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 1.16 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1336 unused Assets / (32.0 KB). Loaded Objects now: 1867.
-Memory consumption went from 62.3 MB to 62.2 MB.
-Total: 22.447200 ms (FindLiveObjects: 0.776600 ms CreateObjectMapping: 0.602200 ms MarkObjects: 20.147200 ms  DeleteObjects: 0.918200 ms)
+Unloading 1338 unused Assets / (305.6 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.3 MB to 64.0 MB.
+Total: 20.732000 ms (FindLiveObjects: 0.471600 ms CreateObjectMapping: 1.002700 ms MarkObjects: 18.289900 ms  DeleteObjects: 0.965000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.542 seconds
+- Loaded All Assemblies, in  3.628 seconds
 Script 'Tree' has the same name as built-in Unity component.
 AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.969 seconds
-Domain Reload Profiling: 3512ms
-	BeginReloadAssembly (680ms)
+- Finished resetting the current domain, in  2.917 seconds
+Domain Reload Profiling: 6583ms
+	BeginReloadAssembly (1109ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
+		DisableScriptedObjects (18ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (65ms)
-	RebuildCommonClasses (128ms)
-	RebuildNativeTypeToScriptingClass (44ms)
-	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (614ms)
-		LoadAssemblies (991ms)
+		CreateAndSetChildDomain (118ms)
+	RebuildCommonClasses (341ms)
+	RebuildNativeTypeToScriptingClass (75ms)
+	initialDomainReloadingComplete (114ms)
+	LoadAllAssembliesAndSetupDomain (2026ms)
+		LoadAssemblies (1877ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (157ms)
-			TypeCache.Refresh (12ms)
+		AnalyzeDomain (828ms)
+			TypeCache.Refresh (26ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (133ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1975ms)
+			BuildScriptInfoCaches (744ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (2919ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1310ms)
+		SetupLoadedEditorAssemblies (2078ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (256ms)
-			ProcessInitializeOnLoadAttributes (830ms)
-			ProcessInitializeOnLoadMethodAttributes (147ms)
-			AfterProcessingInitializeOnLoad (36ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (59ms)
-Refreshing native plugins compatible for Editor in 1.95 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1336 unused Assets / (31.9 KB). Loaded Objects now: 1867.
-Memory consumption went from 62.3 MB to 62.2 MB.
-Total: 88.076400 ms (FindLiveObjects: 1.509500 ms CreateObjectMapping: 0.446700 ms MarkObjects: 41.263900 ms  DeleteObjects: 44.853300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.799 seconds
-Script 'Tree' has the same name as built-in Unity component.
-AddComponent and GetComponent will not work with this script.
-Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.515 seconds
-Domain Reload Profiling: 3311ms
-	BeginReloadAssembly (931ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (51ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (122ms)
-	RebuildCommonClasses (138ms)
-	RebuildNativeTypeToScriptingClass (46ms)
-	initialDomainReloadingComplete (74ms)
-	LoadAllAssembliesAndSetupDomain (606ms)
-		LoadAssemblies (878ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (145ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (121ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1517ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1158ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
+			InitializePlatformSupportModulesInManaged (54ms)
 			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (277ms)
-			ProcessInitializeOnLoadAttributes (725ms)
-			ProcessInitializeOnLoadMethodAttributes (110ms)
-			AfterProcessingInitializeOnLoad (10ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (457ms)
+			ProcessInitializeOnLoadAttributes (1384ms)
+			ProcessInitializeOnLoadMethodAttributes (147ms)
+			AfterProcessingInitializeOnLoad (24ms)
+			EditorAssembliesLoaded (2ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+		AwakeInstancesAfterBackupRestoration (245ms)
+Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1336 unused Assets / (0.8 MB). Loaded Objects now: 1867.
-Memory consumption went from 62.3 MB to 61.4 MB.
-Total: 31.310500 ms (FindLiveObjects: 0.598300 ms CreateObjectMapping: 0.386000 ms MarkObjects: 24.676500 ms  DeleteObjects: 5.646600 ms)
+Unloading 1338 unused Assets / (271.2 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.3 MB to 64.1 MB.
+Total: 23.003600 ms (FindLiveObjects: 1.077600 ms CreateObjectMapping: 1.573800 ms MarkObjects: 19.571700 ms  DeleteObjects: 0.778100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.287 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.459 seconds
+Domain Reload Profiling: 4759ms
+	BeginReloadAssembly (471ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (22ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (70ms)
+	RebuildCommonClasses (99ms)
+	RebuildNativeTypeToScriptingClass (37ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (616ms)
+		LoadAssemblies (771ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (162ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (144ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (3473ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2788ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (246ms)
+			ProcessInitializeOnLoadAttributes (2114ms)
+			ProcessInitializeOnLoadMethodAttributes (336ms)
+			AfterProcessingInitializeOnLoad (36ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (142ms)
+Refreshing native plugins compatible for Editor in 2.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1338 unused Assets / (31.9 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.3 MB to 64.3 MB.
+Total: 39.632100 ms (FindLiveObjects: 1.757600 ms CreateObjectMapping: 6.809800 ms MarkObjects: 28.469500 ms  DeleteObjects: 2.592200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 135.835 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 1.28 ms, found 0 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 35.558 seconds
+Domain Reload Profiling: 171448ms
+	BeginReloadAssembly (67819ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (1173ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (22ms)
+		CreateAndSetChildDomain (28541ms)
+	RebuildCommonClasses (36283ms)
+	RebuildNativeTypeToScriptingClass (3383ms)
+	initialDomainReloadingComplete (1886ms)
+	LoadAllAssembliesAndSetupDomain (26515ms)
+		LoadAssemblies (57864ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (5380ms)
+			TypeCache.Refresh (399ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (4402ms)
+			ResolveRequiredComponents (254ms)
+	FinalizeReload (35561ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (26711ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (754ms)
+			SetLoadedEditorAssemblies (50ms)
+			BeforeProcessingInitializeOnLoad (5749ms)
+			ProcessInitializeOnLoadAttributes (17798ms)
+			ProcessInitializeOnLoadMethodAttributes (2028ms)
+			AfterProcessingInitializeOnLoad (322ms)
+			EditorAssembliesLoaded (8ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (251ms)
+Refreshing native plugins compatible for Editor in 301.11 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1338 unused Assets / (31.9 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.4 MB to 64.3 MB.
+Total: 1328.852900 ms (FindLiveObjects: 0.634200 ms CreateObjectMapping: 0.471200 ms MarkObjects: 797.256800 ms  DeleteObjects: 514.717900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1336 unused Assets / (184.0 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.6 MB to 64.4 MB.
+Total: 125.373500 ms (FindLiveObjects: 2.442300 ms CreateObjectMapping: 0.424800 ms MarkObjects: 120.260700 ms  DeleteObjects: 2.240500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 14.126 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 6.88 ms, found 0 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.324 seconds
+Domain Reload Profiling: 17462ms
+	BeginReloadAssembly (6358ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (1722ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (2102ms)
+	RebuildCommonClasses (371ms)
+	RebuildNativeTypeToScriptingClass (60ms)
+	initialDomainReloadingComplete (132ms)
+	LoadAllAssembliesAndSetupDomain (7216ms)
+		LoadAssemblies (7947ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (648ms)
+			TypeCache.Refresh (68ms)
+				TypeCache.ScanAssembly (7ms)
+			BuildScriptInfoCaches (491ms)
+			ResolveRequiredComponents (39ms)
+	FinalizeReload (3327ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2434ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (49ms)
+			SetLoadedEditorAssemblies (18ms)
+			BeforeProcessingInitializeOnLoad (442ms)
+			ProcessInitializeOnLoadAttributes (1774ms)
+			ProcessInitializeOnLoadMethodAttributes (121ms)
+			AfterProcessingInitializeOnLoad (30ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (32ms)
+Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1338 unused Assets / (131.9 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.4 MB to 64.2 MB.
+Total: 22.272600 ms (FindLiveObjects: 0.442900 ms CreateObjectMapping: 0.234900 ms MarkObjects: 20.354500 ms  DeleteObjects: 1.217300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.969 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 84.93 ms, found 0 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 137.073 seconds
+Domain Reload Profiling: 140045ms
+	BeginReloadAssembly (822ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (39ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (88ms)
+	RebuildCommonClasses (196ms)
+	RebuildNativeTypeToScriptingClass (40ms)
+	initialDomainReloadingComplete (251ms)
+	LoadAllAssembliesAndSetupDomain (1658ms)
+		LoadAssemblies (1642ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (575ms)
+			TypeCache.Refresh (15ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (545ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (137078ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (128981ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (1005ms)
+			SetLoadedEditorAssemblies (682ms)
+			BeforeProcessingInitializeOnLoad (7682ms)
+			ProcessInitializeOnLoadAttributes (106485ms)
+			ProcessInitializeOnLoadMethodAttributes (12879ms)
+			AfterProcessingInitializeOnLoad (248ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (830ms)
+Refreshing native plugins compatible for Editor in 7.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1338 unused Assets / (293.3 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.4 MB to 64.1 MB.
+Total: 33.857100 ms (FindLiveObjects: 0.564000 ms CreateObjectMapping: 0.532400 ms MarkObjects: 30.377000 ms  DeleteObjects: 2.381000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 2.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1336 unused Assets / (32.0 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.6 MB to 64.5 MB.
+Total: 2155.507000 ms (FindLiveObjects: 8.193400 ms CreateObjectMapping: 0.571400 ms MarkObjects: 2144.076900 ms  DeleteObjects: 2.656200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 38.962 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 7.77 ms, found 0 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 17.917 seconds
+Domain Reload Profiling: 56880ms
+	BeginReloadAssembly (14000ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (1564ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (4ms)
+		CreateAndSetChildDomain (3762ms)
+	RebuildCommonClasses (3089ms)
+	RebuildNativeTypeToScriptingClass (520ms)
+	initialDomainReloadingComplete (2798ms)
+	LoadAllAssembliesAndSetupDomain (18528ms)
+		LoadAssemblies (22670ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1811ms)
+			TypeCache.Refresh (226ms)
+				TypeCache.ScanAssembly (13ms)
+			BuildScriptInfoCaches (1534ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (17945ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (12604ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (531ms)
+			SetLoadedEditorAssemblies (38ms)
+			BeforeProcessingInitializeOnLoad (3046ms)
+			ProcessInitializeOnLoadAttributes (8670ms)
+			ProcessInitializeOnLoadMethodAttributes (301ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (7ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (39ms)
+Refreshing native plugins compatible for Editor in 8.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1338 unused Assets / (31.9 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.4 MB to 64.3 MB.
+Total: 167.263200 ms (FindLiveObjects: 5.328400 ms CreateObjectMapping: 5.693300 ms MarkObjects: 152.548800 ms  DeleteObjects: 3.686200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.920 seconds
+Script 'Tree' has the same name as built-in Unity component.
+AddComponent and GetComponent will not work with this script.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  9.252 seconds
+Domain Reload Profiling: 12175ms
+	BeginReloadAssembly (995ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (50ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (146ms)
+	RebuildCommonClasses (177ms)
+	RebuildNativeTypeToScriptingClass (43ms)
+	initialDomainReloadingComplete (98ms)
+	LoadAllAssembliesAndSetupDomain (1605ms)
+		LoadAssemblies (2075ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (236ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (185ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (9256ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (6581ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (266ms)
+			SetLoadedEditorAssemblies (155ms)
+			BeforeProcessingInitializeOnLoad (2308ms)
+			ProcessInitializeOnLoadAttributes (3448ms)
+			ProcessInitializeOnLoadMethodAttributes (315ms)
+			AfterProcessingInitializeOnLoad (87ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (1ms)
+		AwakeInstancesAfterBackupRestoration (89ms)
+Refreshing native plugins compatible for Editor in 0.99 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1338 unused Assets / (365.6 KB). Loaded Objects now: 1872.
+Memory consumption went from 64.4 MB to 64.0 MB.
+Total: 21.883800 ms (FindLiveObjects: 0.312100 ms CreateObjectMapping: 0.194600 ms MarkObjects: 19.823000 ms  DeleteObjects: 1.551800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
