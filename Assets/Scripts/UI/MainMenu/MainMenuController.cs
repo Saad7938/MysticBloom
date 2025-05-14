@@ -4,6 +4,7 @@ public class MaiMenuController : MonoBehaviour
 {
     [SerializeField]private MainMenuButtons mainMenuButtons;
     [SerializeField]private GameObject mainMenuPanel;
+    [SerializeField]private GameObject optionsPanel;
   
     void Start()
     {
@@ -19,14 +20,13 @@ public class MaiMenuController : MonoBehaviour
     }
 
     public void showMainMenu()
-    {
+    {//mk;ml;kmk
         Debug.Log("Show Main Menu");
         mainMenuPanel.SetActive(true);
     }
-    public static void OpenOptionsPanel()
+    public void OpenOptionsPanel()
     {
-        Debug.Log("Options Button Clicked");
-        // Implement your options panel logic here
+        optionsPanel.SetActive(true);
     }
     public void QuitGame()
     {

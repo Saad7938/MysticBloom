@@ -9,6 +9,8 @@ TagManager:
   - Cabbage
   - Tomato
   - Audio
+  - insect
+  - Insect
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - Water
   - UI
   - carrotLayer
-  - 
+  - insect
   - 
   - 
   - 

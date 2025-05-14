@@ -20,11 +20,11 @@ public class RefundSlot : MonoBehaviour, IDropHandler
                 }
                 else if (eventData.pointerDrag.GetComponent<DragDrop>().name == "DragableCabbage(Clone)")
                 {
-                    GameDataManager.AddGrass();
+                    GameDataManager.AddCabbage();
                 }
                 else if (eventData.pointerDrag.GetComponent<DragDrop>().name == "DragableTomato(Clone)")
                 {
-                    GameDataManager.AddTree();
+                    GameDataManager.AddTomato();
                 }
 
                 // Destroy the carrot

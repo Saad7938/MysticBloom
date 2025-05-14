@@ -18,6 +18,7 @@ namespace Farm.Commands
 
         public void Execute()
         {
+            UnityEngine.Debug.Log($"Planting {nameof(_cell)}"); // Co
             void PlantAction() => _cell.Plant(_food);
             
             var nextState = PlayerController.Instance.PlantState;

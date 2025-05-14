@@ -15,6 +15,7 @@ namespace Farm.Commands
 
         public void Execute()
         {
+            UnityEngine.Debug.Log($"Cutting down {nameof(_cell)}"); // Co
             void HarvestAction() => _cell.Harvest();
             var nextState = PlayerController.Instance.PickupState;
             var newTask = new Task(_cell.transform.position, nextState, AnimatorHash.Pickup, HarvestAction);

@@ -92,15 +92,15 @@ public class TrigerSellPanel : MonoBehaviour
 
         if (carrotCount == 3 || cabbageCount == 3 || tomatoCount == 3)
         {
-            coinReward = 5;
+            coinReward = 16;
         }
         else if (carrotCount == 1 && cabbageCount == 1 && tomatoCount == 1)
         {
-            coinReward = 10;
+            coinReward = 25;
         }
         else
         {
-            coinReward = 7;
+            coinReward = 12;
         }
 
         GameDataManager.AddCoin(coinReward);
@@ -125,14 +125,14 @@ public class TrigerSellPanel : MonoBehaviour
     }
     public void sell1CabbageButtonClicked()
     {
-        GameDataManager.ReduceGrass();
+        GameDataManager.ReduceCabbage();
         GameDataManager.AddCoin(1);
         _audioManager.playSFX(_audioManager.Coins_Gained);
 
     }
     public void sell1TomatoButtonClicked()
     {
-        GameDataManager.ReduceTree();
+        GameDataManager.ReduceTomato();
         GameDataManager.AddCoin(1);
         _audioManager.playSFX(_audioManager.Coins_Gained);
     }

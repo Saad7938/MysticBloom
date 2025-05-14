@@ -1,6 +1,8 @@
+using System.Diagnostics;
 using Farm.Grid;
 using Farm.Helpers;
 using Farm.Player;
+using UnityEngine;
 
 namespace Farm.Commands
 {
@@ -15,6 +17,7 @@ namespace Farm.Commands
 
         public void Execute()
         {
+            UnityEngine.Debug.Log($"Cutting down {nameof(_cell)}"); // Co
             void HarvestAction() => _cell.Harvest();
 
             // TODO new state

@@ -13,8 +13,6 @@ namespace Farm.Grid
         private IState _plantedState;
         private StateMachine _stateMachine;
         private MeshRenderer _meshRenderer;
-        private AudioManager _audioManager;
-
         public bool IsFree => _stateMachine.CurrentState == _freeState;
         public FoodBase CurrentFood { get; private set; }
 
@@ -24,7 +22,6 @@ namespace Farm.Grid
             _plantedState = new PlantedState();
             _stateMachine = new StateMachine(_freeState);
             _meshRenderer = GetComponent<MeshRenderer>();
-            _audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         }
 
         private void Start()
@@ -66,12 +63,14 @@ namespace Farm.Grid
             //_audioManager.playSFX(_audioManager.Watering);
 
             CurrentFood = Instantiate(foodBase, transform.position, Quaternion.identity, transform);
-            GameDataManager.ReduceWater(3);
+            GameDataManager.ReduceWater(2);
+            CurrentFood.Initialize(this); 
             ChangeState(_plantedState);
         }
 
         public void Harvest()
         {
+            Debug.Log("Harvesting food");
             if (IsFree)
             {
                 return;
@@ -92,5 +91,11 @@ namespace Farm.Grid
         {
             _meshRenderer.material.color = Color.white;
         }
+        public void OnFoodDestroyed()
+        {
+            CurrentFood = null;
+            ChangeState(_freeState);
+        }
+
     }
 }

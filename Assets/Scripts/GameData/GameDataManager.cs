@@ -11,8 +11,8 @@ namespace GameData
     {
         public T Carrot { get; set; }
         public T Experience { get; set; }
-        public T Tree { get; set; }
-        public T Grass { get; set; }
+        public T Tomato { get; set; }
+        public T Cabbage { get; set; }
         public T Coin { get; set; }
         public T Water { get; set; }
         public T Storage { get; set; }
@@ -22,8 +22,8 @@ namespace GameData
         {
             Carrot = carrot;
             Experience = experience;
-            Tree = tree;
-            Grass = grass;
+            Tomato = tree;
+            Cabbage = grass;
             Coin = coin;
             Water = water;
             Storage = storage;
@@ -34,8 +34,8 @@ namespace GameData
     {
         public static Action<int, int> OnCarrotChange;
         public static Action<int, int> OnExperienceChange;
-        public static Action<int, int> OnTreeChange;
-        public static Action<int, int> OnGrassChange;
+        public static Action<int, int> OnTomatoChange;
+        public static Action<int, int> OnCabbageChange;
         public static Action<int, int> OnCoinChange;
         public static Action<int, int> OnWaterChange;
         public static Action<int, int> OnStorageChange;
@@ -44,15 +44,40 @@ namespace GameData
         private static string _dataPath;
         private const string FileName = "GameData.json";
 
-        private void Awake()
-        {
-            _dataPath = GetGameDataPath();
-            var loadedGameData = Load<GameData<int>>(_dataPath);
-            _gameData = loadedGameData != null
-                ? new GameData<int>(loadedGameData.Carrot, loadedGameData.Experience,
-                loadedGameData.Tree, loadedGameData.Grass, loadedGameData.Coin, loadedGameData.Water, loadedGameData.Storage)
-                : new GameData<int>(0, 0, 0, 0, 0, 0, 0);
-        }
+private void Awake()
+{
+    _dataPath = GetGameDataPath();
+
+    if (File.Exists(_dataPath))
+    {
+        var loadedGameData = Load<GameData<int>>(_dataPath);
+        _gameData = new GameData<int>(
+            loadedGameData.Carrot,
+            loadedGameData.Experience,
+            loadedGameData.Tomato,
+            loadedGameData.Cabbage,
+            loadedGameData.Coin,
+            loadedGameData.Water,
+            loadedGameData.Storage
+        );
+    }
+    else
+    {
+        // First time launch - set default starting values
+        _gameData = new GameData<int>(
+            carrot: 5,
+            experience: 0,
+            tree: 5,
+            grass: 5,
+            coin: 300,
+            water: 12,
+            storage: 15 // assuming 5+5+5 items
+        );
+
+        Save(_gameData, _dataPath); // Save to disk immediately
+    }
+}
+
 
         private void Start()
         {
@@ -63,8 +88,8 @@ namespace GameData
         {
             OnCarrotChange?.Invoke(0, _gameData.Carrot);
             OnExperienceChange?.Invoke(0, _gameData.Experience);
-            OnTreeChange?.Invoke(0, _gameData.Tree);
-            OnGrassChange?.Invoke(0, _gameData.Grass);
+            OnTomatoChange?.Invoke(0, _gameData.Tomato);
+            OnCabbageChange?.Invoke(0, _gameData.Cabbage);
             OnCoinChange?.Invoke(0, _gameData.Coin);
             OnWaterChange?.Invoke(0, _gameData.Water);
             OnStorageChange?.Invoke(0, _gameData.Storage);
@@ -155,42 +180,42 @@ namespace GameData
             OnExperienceChange?.Invoke(prevValue, _gameData.Experience);
         }
 
-        public static void AddTree()
+        public static void AddTomato()
         {
-            var prevValue = _gameData.Tree;
-            _gameData.Tree++;
+            var prevValue = _gameData.Tomato;
+            _gameData.Tomato++;
             SetStorage();
-            OnTreeChange?.Invoke(prevValue, _gameData.Tree);
+            OnTomatoChange?.Invoke(prevValue, _gameData.Tomato);
         }
-        public static void ReduceTree()
+        public static void ReduceTomato()
         {
-            var prevValue = _gameData.Tree;
-            if (_gameData.Tree > 0)
-                _gameData.Tree--;
-            OnTreeChange?.Invoke(prevValue, _gameData.Tree);
+            var prevValue = _gameData.Tomato;
+            if (_gameData.Tomato > 0)
+                _gameData.Tomato--;
+            OnTomatoChange?.Invoke(prevValue, _gameData.Tomato);
         }
-        public static int getTreeCount()
+        public static int getTomatoCount()
         {
-            return _gameData.Tree;
+            return _gameData.Tomato;
         }
 
-        public static void AddGrass()
+        public static void AddCabbage()
         {
-            var prevValue = _gameData.Grass;
-            _gameData.Grass++;
+            var prevValue = _gameData.Cabbage;
+            _gameData.Cabbage++;
             SetStorage();
-            OnGrassChange?.Invoke(prevValue, _gameData.Grass);
+            OnCabbageChange?.Invoke(prevValue, _gameData.Cabbage);
         }
-        public static void ReduceGrass()
+        public static void ReduceCabbage()
         {
-            var prevValue = _gameData.Grass;
-            if (_gameData.Grass > 0)
-                _gameData.Grass--;
-            OnGrassChange?.Invoke(prevValue, _gameData.Grass);
+            var prevValue = _gameData.Cabbage;
+            if (_gameData.Cabbage > 0)
+                _gameData.Cabbage--;
+            OnCabbageChange?.Invoke(prevValue, _gameData.Cabbage);
         }
-        public static int getGrassCount()
+        public static int getCabbageCount()
         {
-            return _gameData.Grass;
+            return _gameData.Cabbage;
         }
 
         private static void Save<T>(GameData<T> gameData, string dataPath)

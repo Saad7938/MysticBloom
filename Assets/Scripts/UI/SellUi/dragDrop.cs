@@ -103,8 +103,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         return foodName switch
         {
             "C" => GameDataManager.getCarrotCount() > 0,
-            "Cb" => GameDataManager.getGrassCount() > 0,
-            "T" => GameDataManager.getTreeCount() > 0,
+            "Cb" => GameDataManager.getCabbageCount() > 0,
+            "T" => GameDataManager.getTomatoCount() > 0,
             _ => false
         };
     }
@@ -114,8 +114,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         switch (foodName)
         {
             case "C": GameDataManager.ReduceCarrot(); break;
-            case "Cb": GameDataManager.ReduceGrass(); break;
-            case "T": GameDataManager.ReduceTree(); break;
+            case "Cb": GameDataManager.ReduceCabbage(); break;
+            case "T": GameDataManager.ReduceTomato(); break;
         }
     }
 
@@ -124,8 +124,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         switch (foodName)
         {
             case "C": GameDataManager.AddCarrot(); break;
-            case "Cb": GameDataManager.AddGrass(); break;
-            case "T": GameDataManager.AddTree(); break;
+            case "Cb": GameDataManager.AddCabbage(); break;
+            case "T": GameDataManager.AddTomato(); break;
         }
     }
 }

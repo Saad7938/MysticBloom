@@ -24,6 +24,18 @@ namespace Farm.Audio
         {
             SFXSource.PlayOneShot(clip);
         }
+        public void MusicOn()
+        {
+            musicSource.loop = true;
+            musicSource.enabled = true;
+            musicSource.Play();
+        }
+        public void MusicOff()
+        {
+            musicSource.Stop();
+            musicSource.loop = false;
+            musicSource.enabled = false;
+        }
     }
 
 }

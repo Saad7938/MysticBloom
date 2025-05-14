@@ -78,18 +78,18 @@ namespace Farm.UI
             SelectedCell = cell;
             Hide();
 
-            if(GameDataManager.IsStorageFull())
-            {
-                return;
-            }
-
+            // if(GameDataManager.IsStorageFull())
+            // {
+            //     return;
+            // }
+            Debug.Log($"calling cell: {cell.name}");
             if (cell.CurrentFood.IsRipe)
             {
                 ICommand command = cell.CurrentFood.FoodKind switch
                 {
                     FoodKind.Carrot => new PickupCommand(cell),
-                    FoodKind.Grass => new CutDownCommand(cell),
-                    FoodKind.Tree => new CutDownCommand(cell),
+                    FoodKind.Cabbage => new CutDownCommand(cell),
+                    FoodKind.Tomato => new CutDownCommand(cell),
                     _ => throw new ArgumentOutOfRangeException(),
                 };
                 command.Execute();

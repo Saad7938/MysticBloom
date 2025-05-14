@@ -4,6 +4,7 @@ using GameData;
 using TMPro;
 using UnityEngine;
 
+
 namespace Farm.UI
 {
     public class GameStatView : MonoBehaviour
@@ -17,8 +18,11 @@ namespace Farm.UI
         [SerializeField] private TextMeshProUGUI _grassLabelSell;
         [SerializeField] private TextMeshProUGUI _coinLabel;
         [SerializeField] private TextMeshProUGUI _waterLabel;
-        [SerializeField] private TextMeshProUGUI _storage;
+        private TextMeshProUGUI _storage = new TextMeshProUGUI();
+        [SerializeField] private LevelUpControler _levelUpControler;
 
+
+        bool flag = true;
 
         private float _minDuration = 0.33f;
         private float _maxDuration = 0.66f;
@@ -27,8 +31,8 @@ namespace Farm.UI
         {
             GameDataManager.OnCarrotChange += OnCarrotChange;
             GameDataManager.OnExperienceChange += OnExperienceChange;
-            GameDataManager.OnTreeChange += OnTreeChange;
-            GameDataManager.OnGrassChange += OnGrassChange;
+            GameDataManager.OnTomatoChange += OnTomatoChange;
+            GameDataManager.OnCabbageChange += OnCabbageChange;
             GameDataManager.OnCoinChange += OnCoinChange;
             GameDataManager.OnWaterChange += OnWaterChange;
             GameDataManager.OnStorageChange += OnStorageChange;
@@ -38,8 +42,8 @@ namespace Farm.UI
         {
             GameDataManager.OnCarrotChange -= OnCarrotChange;
             GameDataManager.OnExperienceChange -= OnExperienceChange;
-            GameDataManager.OnTreeChange -= OnTreeChange;
-            GameDataManager.OnGrassChange -= OnGrassChange;
+            GameDataManager.OnTomatoChange -= OnTomatoChange;
+            GameDataManager.OnCabbageChange -= OnCabbageChange;
             GameDataManager.OnCoinChange -= OnCoinChange;
             GameDataManager.OnWaterChange -= OnWaterChange;
             GameDataManager.OnStorageChange -= OnStorageChange;
@@ -56,31 +60,50 @@ namespace Farm.UI
             _carrotLabelSell.SetText($"Carrot: {value:0}");
         }
 
-        private void OnTreeChange(int prevValue, int newValue)
+        private void OnTomatoChange(int prevValue, int newValue)
         {
-            StartCoroutine(GradualChangeValue(prevValue, newValue, UpdateTreeLabel));
+            StartCoroutine(GradualChangeValue(prevValue, newValue, UpdateTomatoLabel));
         }
 
-        private void UpdateTreeLabel(float value)
+        private void UpdateTomatoLabel(float value)
         {
-            _treeLabel.SetText($"Tree: {value:0}");
-            _treeLabelSell.SetText($"Tree: {value:0}");
+            _treeLabel.SetText($"Tomato: {value:0}");
+            _treeLabelSell.SetText($"Tomato: {value:0}");
         }
 
-        private void OnGrassChange(int prevValue, int newValue)
+        private void OnCabbageChange(int prevValue, int newValue)
         {
-            StartCoroutine(GradualChangeValue(prevValue, newValue, UpdateGrassLabel));
+            StartCoroutine(GradualChangeValue(prevValue, newValue, UpdateCabbageLabel));
         }
 
-        private void UpdateGrassLabel(float value)
+        private void UpdateCabbageLabel(float value)
         {
-            _grassLabel.SetText($"Grass: {value:0}");
-            _grassLabelSell.SetText($"Grass: {value:0}");
+            _grassLabel.SetText($"Cabbage: {value:0}");
+            _grassLabelSell.SetText($"Cabbage: {value:0}");
         }
 
         private void OnExperienceChange(int prevValue, int newValue)
         {
+
             StartCoroutine(GradualChangeValue(prevValue, newValue, UpdateExperienceLabel));
+            string value = "";
+            int expValue = 0;
+
+            if (flag)
+            {
+                if (_expLabel.text.Contains(":"))
+                {
+                    int colonIndex = _expLabel.text.IndexOf(":");
+                    value = _expLabel.text.Substring(colonIndex + 1).Trim();
+
+                    int.TryParse(value, out expValue);
+                }
+                if (expValue >= 1000)
+                {
+                    _levelUpControler.levelUpPanel.SetActive(true);
+                    flag = false;
+                }
+            }
         }
 
         private void UpdateExperienceLabel(float value)
