@@ -20,9 +20,6 @@ It solves the problem of traditional farming games by adding action and strategy
 2. Open the `MainScene` in the Scenes folder
 3. Press the Play button to start the game
 
-## Screenshots
-_Add in-game screenshots here_
-
 ## Results / Key Points
 - Engaging gameplay with farming + action mechanics
 - Easy-to-use UI for players
